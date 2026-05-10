@@ -262,24 +262,68 @@ function Landing() {
             <h2 className="text-3xl font-bold text-[color:var(--brand-green)] sm:text-4xl">Product Specifications</h2>
             <p className="mt-3 text-[color:var(--ink-soft)]">Quality that lasts. Designed for everyday use.</p>
           </div>
-          <div className="mt-10 overflow-hidden rounded-2xl border border-[color:var(--brand-mint)]">
-            <table className="w-full text-left">
-              <tbody className="divide-y divide-[color:var(--brand-mint)] text-[color:var(--ink)]">
-                {[
-                  ["Power", "USB Type-C Rechargeable (no AAA batteries needed)"],
-                  ["Size", "9.5 × 4 × 3.5 cm — fits in your palm"],
-                  ["Material", "ABS Food-Grade Plastic"],
-                  ["Buttons", "Sealing button + Cutter button + Power switch"],
-                  ["Indicator", "Blue light = Power On · Red light = Charging"],
-                  ["In The Box", "1 Sealer + Type-C charging cable + 10 FREE bags"],
-                ].map(([k, v]) => (
-                  <tr key={k} className="bg-white hover:bg-[color:var(--brand-mint)]/40">
-                    <th className="w-1/3 p-4 font-semibold text-[color:var(--brand-green-deep)]">{k}</th>
-                    <td className="p-4 text-[color:var(--ink-soft)]">{v}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="mt-10 grid items-center gap-8 lg:grid-cols-2">
+            <img
+              src={productParts}
+              alt="Food Saver Machine parts — sealing button, cutter, power switch, indicator light and Type-C port"
+              loading="lazy"
+              className="rounded-2xl border border-[color:var(--brand-mint)] shadow-md"
+            />
+            <div className="overflow-hidden rounded-2xl border border-[color:var(--brand-mint)]">
+              <table className="w-full text-left">
+                <tbody className="divide-y divide-[color:var(--brand-mint)] text-[color:var(--ink)]">
+                  {[
+                    ["Power", "USB Type-C Rechargeable (no AAA batteries needed)"],
+                    ["Size", "9.5 × 4 × 3.5 cm — fits in your palm"],
+                    ["Material", "ABS Food-Grade Plastic"],
+                    ["Buttons", "Sealing button + Cutter button + Power switch"],
+                    ["Indicator", "Blue light = Power On · Red light = Charging"],
+                    ["In The Box", "1 Sealer + Type-C charging cable + 10 FREE bags"],
+                  ].map(([k, v]) => (
+                    <tr key={k} className="bg-white hover:bg-[color:var(--brand-mint)]/40">
+                      <th className="w-1/3 p-4 font-semibold text-[color:var(--brand-green-deep)]">{k}</th>
+                      <td className="p-4 text-[color:var(--ink-soft)]">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* RECHARGEABLE / VS */}
+      <section className="bg-[color:var(--brand-mint)] section-pad">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 lg:grid-cols-2">
+          <img
+            src={productVs}
+            alt="Our Type-C rechargeable sealer vs old AAA battery sealers"
+            loading="lazy"
+            className="rounded-2xl shadow-lg"
+          />
+          <div>
+            <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-semibold text-[color:var(--brand-green-deep)]">
+              <Sparkles className="h-3.5 w-3.5" /> Smarter Than The Old Models
+            </span>
+            <h2 className="mt-4 text-3xl font-bold text-[color:var(--brand-green)] sm:text-4xl">
+              Forget AAA Batteries. <span className="text-[color:var(--brand-orange)]">Just Plug & Charge.</span>
+            </h2>
+            <p className="mt-4 text-lg text-[color:var(--ink-soft)]">
+              Our sealer charges with the same Type-C cable you use for your phone. No more running around looking for batteries every other week.
+            </p>
+            <ul className="mt-6 space-y-3 text-[color:var(--ink-soft)]">
+              {[
+                "Type-C charging port — charge from any phone charger or power bank.",
+                "One full charge lasts for hundreds of seals.",
+                "No batteries to buy, replace or throw away — saves you money long-term.",
+                "Blue light = Power On. Red light = Charging. Simple to use.",
+              ].map((p) => (
+                <li key={p} className="flex gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[color:var(--brand-green)]" />
+                  <span>{p}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
