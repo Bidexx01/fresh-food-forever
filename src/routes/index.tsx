@@ -101,15 +101,15 @@ function Landing() {
               <Sparkles className="h-3.5 w-3.5" /> #1 Kitchen Upgrade in Nigeria
             </span>
             <h1 className="mt-5 text-4xl font-extrabold leading-[1.1] text-[color:var(--brand-green)] sm:text-5xl lg:text-6xl">
-              Keep Your Food Fresh <span className="text-[color:var(--brand-orange)]">5X Longer</span> Without Fridge Stress
+              Stop Wasting Food. <span className="text-[color:var(--brand-orange)]">Save Money</span> For Your Family Every Single Week.
             </h1>
             <p className="mt-5 max-w-lg text-lg text-[color:var(--ink-soft)]">
-              Seal meat, vegetables, soup ingredients and snacks airtight in seconds — and stop throwing money in the bin.
+              Reseal your garri, semo, groundnut oil, beans, crayfish and pepper sachets in <strong>2 seconds</strong> — keep them fresh, dry and weevil-free for months. No more pouring spoiled food in the bin.
             </p>
 
             <div className="mt-8 flex flex-col items-start gap-4">
               <a href="#order" className="btn-cta-deep w-full sm:w-auto">
-                ORDER NOW →
+                YES! I WANT MINE — PAY ON DELIVERY →
               </a>
               <div className="flex flex-wrap gap-x-5 gap-y-2">
                 <TrustChip>Pay On Delivery</TrustChip>
@@ -264,12 +264,12 @@ function Landing() {
             <table className="w-full text-left">
               <tbody className="divide-y divide-[color:var(--brand-mint)] text-[color:var(--ink)]">
                 {[
-                  ["Voltage", "220V – 240V"],
-                  ["Power", "120W (very low electricity consumption)"],
-                  ["Size", "35 × 12 × 7 cm"],
+                  ["Power", "USB Type-C Rechargeable (no AAA batteries needed)"],
+                  ["Size", "9.5 × 4 × 3.5 cm — fits in your palm"],
                   ["Material", "ABS Food-Grade Plastic"],
-                  ["Vacuum Strength", "-60 kPa Strong Suction"],
-                  ["Weight", "1.2 kg (lightweight)"],
+                  ["Buttons", "Sealing button + Cutter button + Power switch"],
+                  ["Indicator", "Blue light = Power On · Red light = Charging"],
+                  ["In The Box", "1 Sealer + Type-C charging cable + 10 FREE bags"],
                 ].map(([k, v]) => (
                   <tr key={k} className="bg-white hover:bg-[color:var(--brand-mint)]/40">
                     <th className="w-1/3 p-4 font-semibold text-[color:var(--brand-green-deep)]">{k}</th>
