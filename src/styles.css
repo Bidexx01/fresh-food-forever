@@ -1,6 +1,7 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -62,9 +63,23 @@
 }
 
 :root {
-  --radius: 0.625rem;
+  --radius: 0.75rem;
+  --font-display: "Poppins", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Brand */
+  --brand-green: oklch(0.38 0.10 155);          /* #14532D */
+  --brand-green-deep: oklch(0.42 0.11 155);     /* #166534 */
+  --brand-orange: oklch(0.72 0.19 45);          /* #F97316 */
+  --brand-orange-deep: oklch(0.66 0.20 38);     /* #EA580C */
+  --brand-cream: oklch(0.985 0.018 75);         /* #FFF7ED */
+  --brand-mint: oklch(0.985 0.025 145);         /* #F0FDF4 */
+  --brand-gray-bg: oklch(0.978 0.002 250);      /* #F9FAFB */
+  --ink: oklch(0.22 0.02 250);                  /* #1F2937 */
+  --ink-soft: oklch(0.36 0.02 250);             /* #374151 */
+
   --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --foreground: var(--ink);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
