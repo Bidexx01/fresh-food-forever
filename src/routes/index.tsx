@@ -478,9 +478,9 @@ function Landing() {
                 defaultValue="1"
                 className="w-full rounded-lg border border-[color:var(--brand-mint)] bg-white px-4 py-3 text-base outline-none focus:border-[color:var(--brand-orange)] focus:ring-2 focus:ring-[color:var(--brand-orange)]/30"
               >
-                <option value="1">1 Unit (+ 10 Free Bags)</option>
-                <option value="2">2 Units (+ 20 Free Bags)</option>
-                <option value="3">3 Units (+ 30 Free Bags)</option>
+                <option value="1">1 Unit — ₦24,500 (+ 10 Free Bags)</option>
+                <option value="2">2 Units — ₦46,000 (Save ₦3,000) + 20 Free Bags</option>
+                <option value="3">3 Units — ₦62,500 (Save ₦11,000) + 30 Free Bags</option>
               </select>
             </div>
 
