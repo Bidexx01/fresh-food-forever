@@ -500,7 +500,7 @@ function Landing() {
       <footer className="bg-[color:var(--brand-green)] py-8 text-center text-sm text-white/80">
         <p>© {new Date().getFullYear()} Food Saver Nigeria. Nationwide delivery with inspection.</p>
         <p className="mt-1 flex items-center justify-center gap-2 text-white/60">
-          <Truck className="h-4 w-4" /> 2–5 working days delivery
+          <Truck className="h-4 w-4" /> Same-day to 2-day delivery depending on your location
         </p>
       </footer>
 
