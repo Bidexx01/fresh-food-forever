@@ -22,6 +22,8 @@ import heroMachine from "@/assets/hero-machine.jpg";
 import freshFood from "@/assets/fresh-food.jpg";
 import spoiledFood from "@/assets/spoiled-food.jpg";
 import happyFamily from "@/assets/happy-family.jpg";
+import productParts from "@/assets/product-parts.png";
+import productVs from "@/assets/product-vs.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
