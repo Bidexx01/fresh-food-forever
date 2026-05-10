@@ -90,7 +90,7 @@ function Landing() {
     { q: "Does it work for soup ingredients?", a: "Yes. It works perfectly for meat, fish, vegetables, pepper, and pre-cut soup ingredients." },
     { q: "Can I pay on delivery?", a: "Yes, we offer pay on delivery in selected locations across Nigeria." },
     { q: "Does it come with sealing bags?", a: "Yes — every order includes 10 FREE vacuum bags as a gift." },
-    { q: "How long does delivery take?", a: "Between 2–5 working days depending on your location." },
+    { q: "How long does delivery take?", a: "1–2 days delivery in Lagos and major cities. Other locations within 2–4 days." },
   ];
 
   return (
